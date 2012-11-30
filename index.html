@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="iso-8859-1" />
+    <meta name="viewport" content="width=1024" />
+    <title>O básico para desenvolvimento de plug-ins para o Jenkins</title>
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bruno P. Kinoshita" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body class="impress-not-supported">
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+<div id="impress">
+    <div id="landing" class="step slide" data-x="-1500" data-y="-1500" data-scale='2'>
+        <h1 class='center' id="title">O básico para desenvolvimento de plug-ins para o Jenkins</h1>
+        <div class='center'>
+        	<img src="img/jenkins_no_bg.png" width="250px" style='margin: auto auto; display: block;' />
+       	</div>
+       	<div class='footer'>
+       		<span class='author fleft'>Bruno P. Kinoshita<br/>kinow@apache.org</span><span class='company fright'><img src='img/tupilabs_logo.png' width='200px'/></span>
+       	</div>
+    </div>
+
+    <div id="aboutme" class="step slide" data-x="0" data-y="-1850">
+        <h1>Quem sou eu</h1>
+        
+        <img src="img/bruno.jpg" style="float: right" />
+        
+        <ul>
+        	<li><strong>Bruno P. Kinoshita</strong></li>
+        	<li>28 anos</li>
+        	<li>Paulistano, Zona Norte, Mackenzista, <strong>red ale</strong>, slackline, bioinformática, programação</li>
+        	<li>OSS -&gt; <strong>Jenkins</strong>, TestLink, Apache Commons</li>
+        	<li>TupiLabs (@tupilabs)</li>
+        	<li><a href="http://www.kinoshita.eti.br" title="Kinoshita Website">kinoshita.ti.br</a></li>
+        	<li>@kinow (twitter, github, #jenkins, #asfcommons, #testlink)</li>
+        </ul>
+    </div>
+
+    <div id="my-plugins" class="step slide" data-x="0" data-y="-1150">
+        <h1>Plugins que mantenho</h1>
+        <p style="float:right;display:inline-block;">
+        	<img src="img/plugins.png" width="350px" style="margin-top:100px;" />
+        </p>
+        <ul>
+        	<li>TAP (<del>212</del>-341)</li>
+        	<li>TestLink (<del>586</del>-706)</li>
+        	<li>Testopia (<del>NA</del>-37)</li>
+        	<li>CCM (<del>378</del>-461)</li>
+        </ul>
+        
+        <br/>
+        <br/>
+        
+        <p>E plug-ins não hospedados no projeto (Seu Madruga, BioUno, ...)</p>
+        
+        <br/>
+        <br/>
+        
+        <p><small><del>Valores apresentados no TDC SP em Julho/2012</del></small></p>
+    </div>
+    
+    <div id="como-sera-a-apresentacao" class="step center" data-x="1500" data-y="-1850" data-rotate="90" data-scale="0.5">
+    	<h1>Como será esta apresentação</h1>
+    </div>
+    <div id="detalhes" class="step" data-x="1150" data-y="-1850" data-rotate="90" data-scale="0.5">
+    	<ul style="font-size:36px;">
+    		<li>40 minutos e 5 minutos para perguntas</li>
+    		<li>Desenvolvendo um plug-in Java de início a fim</li>
+			<li>Utilizando Java, Eclipse e Maven</li>
+			<li>Dicas serão apresentadas durante a apresentação</li>
+			<li>Mostraremos como se envolver no projeto também!</li>
+			<li>Seguiremos o tutorial para desenvolver plug-ins do Wiki do Jenkins</li>
+			<li>Código no github - @kinow</li>
+    	</ul>
+    </div>
+    
+    <div id="wiki_url" class="step" data-x="1000" data-y="-1850" data-rotate="90" data-scale="0.5">
+    	<h1 style="font-size:28px;" class='center'>https://wiki.jenkins-ci.org/display/JENKINS/Plugin+tutorial</h1>
+    </div>
+    
+    <div id="jenkins" class="step" data-x="-1500" data-y="-200">
+    	<h1 class='center'>O que é Jenkins?</h1>
+    	
+    	<ul style="font-size:36px;">
+    		<li>Servidor de <b>Integração Contínua</b> Open Source</li>
+    		<li>Née <del>Hudson</del></li>
+    		<li><b>Extensível</b> - Mais de <del>400</del> 600 plug-ins</li>
+    		<li><b>Notificações</b> - Envio de e-mails, IRC, GTalk, SMS, mísseis USB, ...</li>
+    		<li>Independente de linguagem de programação (Ruby, Lua, C, Perl, ...)</li>
+    		<li>Ótimo para <b>automatização</b>!</li>
+    		<li>Simples de usar</li>
+    		<li><b>Ótima comunidade e documentação</b></li>
+    	</ul>
+    </div>
+    
+    <div id="jenkins_screenshot" class="step" data-x="-1500" data-y="800">
+    	<div class='center'>
+    		<img src="img/jenkins_screenshot.png" width="800" />
+    	</div>
+    </div>
+    
+    <div id="jenkins_url" class="step" data-x="-1500" data-y="1400">
+    	<h1 style="font-size:40px;" class='center'>http://www.jenkins-ci.org</h1>
+    </div>
+    
+    <div id="plugins" class="step center" data-x="-1500" data-y="2000">
+    	<h1 style="font-size:40px;">Get all the Plug-ins!</h1>
+    	
+    	<img src='img/plugins.jpg' width="400" />
+    </div>
+    
+    <div id="testlink" class="step center" data-x="-500" data-y="2000">
+    	<h1 style="font-size:40px;">Jenkins TestLink Plug-in</h1>
+    	
+    	<img src='img/testlink.png' width="800" />
+    </div>
+    
+    <div id="tap" class="step center" data-x="500" data-y="2000">
+    	<h1 style="font-size:40px;">Jenkins TAP Plug-in</h1>
+    	
+    	<img src='img/tap.png' width="800" />
+    </div>
+    
+    <div id="chuck_norris" class="step center" data-x="1500" data-y="2000">
+    	<h1 style="font-size:40px;">Jenkins Chuck Norris Plug-in</h1>
+    	
+    	<img src='img/chuck_norris.jpg' width="800" />
+    </div>
+    
+    <div id="meme_generator" class="step center" data-x="2500" data-y="2000">
+    	<h1 style="font-size:40px;">Jenkins Meme Generator Plug-in</h1>
+    	
+    	<img src='img/meme.jpg' width="400" />
+    </div>
+    
+    <div id="and_more" class="step" data-x="3500" data-y="2000">
+    	<h1 style="font-size:40px;" class='center'>E muito mais (600+)</h1>
+    	
+    	<ul style="font-size:36px;">
+    		<li>JClouds Plug-in</li>
+    		<li>Performance Plug-in</li>
+    		<li>Gerrit</li>
+    		<li>Git</li>
+    		<li>EnvInject</li>
+    		<li>PMD</li>
+    		<li>Publish over SSH</li>
+    		<li>...</li>
+    	</ul>
+    </div>
+    
+    <div id="extension_points" class="step" data-x="0" data-y="400" data-rotate="270" data-scale="2">
+    	<h3>O que plug-ins podem fazer?</h3>
+    	
+    	<ul style="font-size:36px;">
+    		<li>Modificar a UI</li>
+    		<li>Integrar Jenkins com outros sistemas</li>
+    		<li>Executar um parser</li>
+    		<li>Coletar métricas do build</li>
+    		<li>Chamar outras API's como Twitter, JMS, SAP, etc</li>
+    		<li>Utilizar serviços em nuvem</li>
+    		<li>Rodar Jenkins como nó Hadoop</li>
+    		<li>Chamar um cluster PBS e executar um programa MPI (BioUno)</li>
+    		<li>Há diversos <strong>extension points</strong></li>
+    	</ul>
+    </div>
+    
+    <div id="examples" class="step" data-x="1400" data-y="400" data-rotate="270" data-scale="2">
+    	<h3>Exemplos de extension points</h3>
+    	
+    	<ul style="font-size:36px;">
+    		<li>hudson.slaves.ComputerListener (hadoop, keep-slaves-offline, monitoring)</li>
+			<li>hudson.slaves.Cloud (Amazon EC2, Lab Manager)</li>
+			<li>hudson.tasks.test.TestResultParser (utpsql, core)</li>
+			<li>hudson.tasks.Builder (TestLink, Ant, CCM, Gradle, MsBuild)</li>
+    	</ul>
+    </div>
+    
+    <div id="environment" class='step slide' data-x="2300" data-y="400" data-z="0" data-rotate-x="270" data-rotate-z="180" data-rotate-y="90" data-scale="2">
+    	<h3>Preparando o ambiente</h3>
+    	
+    	<ul>
+    		<li>Java <del>5</del> 6+</li>
+    		<li>Eclipse (IntelliJ, NetBeans, Vim, ...)</li>
+    		<li>Maven 3.x</li>
+    		<li>Modificar settings.xml do Maven</li>
+    		<li>Conexão boa com a Internet (yup, o Maven vai baixar a Internet :)</li>
+    	</ul>
+    </div>
+    
+    <div id="hello_world" class='step slide' data-x="2300" data-y="400" data-z="1900" data-rotate-x="270" data-rotate-z="180" data-rotate-y="90" data-scale="2">
+    	<h3>Criando o plug-in hello world</h3>
+    	
+    	<ul>
+    		<li style='line-height: 2.0em;'><b>mvn hpi:create</b></li>
+    		<li style='line-height: 2.0em;'>Em caso de erros, use <b>-X -e</b></li>
+    		<li style='line-height: 2.0em;'>Depois da primeira vez pode user o <b>-o</b></li>
+    		<li style='line-height: 2.0em;'><b>mvn package</b> para empacotar seu plug-in</li>
+    		<li style='line-height: 2.0em;'><b>mvn clean hpi:run</b> para executar</li>
+    		<li style='line-height: 2.0em;'>E então <b>http://localhost:8080</b></li>
+    	</ul>
+    </div>
+    
+    <div id="structure" class='step slide' data-x="2300" data-y="3000" data-z="0" data-rotate-x="270" data-rotate-z="180" data-rotate-y="90" data-scale="2">
+    	<h3>Entendendo a estrutura dos plug-ins</h3>
+    	
+    	<ul>
+    		<li style='line-height: 2.0em;'><b>src/main/java</b> - Classes do seu plug-in</li>
+    		<li style='line-height: 2.0em;'><b>src/main/resources</b> - jelly, groovy, html, ...</li>
+    		<li style='line-height: 2.0em;'><b>src/main/webapp</b> - css, js, images, html, ...</li>
+    	</ul>
+    </div>
+    
+    <div id="changes" class='step slide' data-x="2300" data-y="3000" data-z="1900" data-rotate-x="270" data-rotate-z="180" data-rotate-y="90" data-scale="2">
+    	<h3>Vamos modificar o nosso plug-in</h3>
+    	
+    	<ul>
+    		<li style='line-height: 2.0em;'>Vamos usar <b>outro extension point</b></li>
+    		<li style='line-height: 2.0em;'>Interagir com um sistema externo</li>
+    		<li style='line-height: 2.0em;'><b>Usar uma API para acessar este sistema</b></li>
+    		<li style='line-height: 2.0em;'><b>Criar uma action</b></li>
+    		<li style='line-height: 2.0em;'>Enfrentar os problemas que aparecerem</li>
+    		<li style='line-height: 2.0em;'><b>Copiar outros plug-ins (!)</b></li>
+    	</ul>
+    </div>
+    
+    <div id="any_questions" class='step slide' data-x="-1000" data-y="3000" data-z="1900" data-rotate-x="270" data-rotate-z="180" data-rotate-y="90" data-scale="2">
+    	<h3>Perguntas?</h3>
+    	
+    	<br/><br/><br/>
+    	<h1 class='center'>( º u º )/</h1>
+    </div>
+    
+    <div id=final_notes class='step slide' data-x="-3500" data-y="3000" data-z="1900" data-rotate-x="270" data-rotate-z="180" data-rotate-y="90" data-scale="2">
+    	<h3>Notas finais</h3>
+    	
+    	<ul>
+    		<li style='line-height: 2.0em;'>Ambientes distribuídos (FilePath)</li>
+    		<li style='line-height: 2.0em;'>Testando seu plug-in</li>
+    		<li style='line-height: 2.0em;'>Jelly &amp; Groovy</li>
+    		<li style='line-height: 2.0em;'>Publicando seu plug-in no Jenkins CI</li>
+    		<li style='line-height: 2.0em;'>Onde obter ajuda?</li>
+    		<li style='line-height: 2.0em;'>Suporte Corporativo</li>
+    		<li style='line-height: 2.0em;'>Jenkins CIA</li>
+    		<li style='line-height: 2.0em;'>Doações ao projeto</li>
+    	</ul>
+    </div>
+    
+    <div id=thank_you class='step center' data-x="-3500" data-y="3000" >
+    	<h1>Obrigado!!!</h1>
+    	
+    	<p>kinow@apache.org</p>
+    	<p>bruno@tupilabs.com</p>
+    	<p>www.tupilabs.com</p>
+    	
+    	<br/>
+    	
+    	<p>@kinow, @tupilabs</p>
+    </div>
+    
+    <div id="overview" class="step" data-x="1000" data-y="0" data-scale="8">
+    </div>
+</div>
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+</body>
+</html>
+<!-- This presentation was created to the sound o Ben Harper @ tubalr -->
